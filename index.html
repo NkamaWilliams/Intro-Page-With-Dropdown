@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./snap.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script src="./snap.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="#"><img class="logo" alt="logo" src="./images/logo.svg"></a>
+    
+    <div class="links">
+
+      <div class="page-links">
+        <div class="dropdown features" onclick="toggle_dropdown('features')">
+          Features <img class="img1" alt="arrow-down" src="./images/icon-arrow-down.svg"><img class="img2 close" alt="arrow-up" src="./images/icon-arrow-up.svg">
+          <br>
+          <div class="dropdown-list close">
+            <ul>
+              <li><img alt="todo" src="./images/icon-todo.svg"> <a href="#">Todo List</a></li>
+              <li><img alt="calendar" src="./images/icon-calendar.svg"> <a href="#">Calendar</a></li>
+              <li><img alt="reminders" src="./images/icon-reminders.svg"> <a href="#">Reminders</a></li>
+              <li><img alt="planning" src="./images/icon-planning.svg"> <a href="#">Planning</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="dropdown company" onclick="toggle_dropdown('company')">
+          Company <img class="img1" alt="arrow-down" src="./images/icon-arrow-down.svg"><img class="img2 close" alt="arrow-up" src="./images/icon-arrow-up.svg">
+          <br>
+          <div class="dropdown-list close">
+            <ul>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div>
+  
+      <div class="action-links">
+        <a href="#">Login</a>
+        <button type="button" class="button">Register</button>
+      </div>
+
+    </div>
+
+    <img onclick="open_menu()" class="menu" alt="menu" src="./images/icon-menu.svg">
+    <div class="menu-details">
+      <img onclick="close_menu()" class="close-menu" alt="close-menu" src="./images/icon-close-menu.svg">
+      <div class="dropdown features" onclick="toggle_dropdown2('features')">
+        Features <img class="img1" alt="arrow-down" src="./images/icon-arrow-down.svg"><img class="img2 close" alt="arrow-up" src="./images/icon-arrow-up.svg">
+        <br>
+        <div class="dropdown-list2">
+          <ul>
+            <li><img alt="todo" src="./images/icon-todo.svg"> <a href="#">Todo List</a></li>
+            <li><img alt="calendar" src="./images/icon-calendar.svg"> <a href="#">Calendar</a></li>
+            <li><img alt="reminders" src="./images/icon-reminders.svg"> <a href="#">Reminders</a></li>
+            <li><img alt="planning" src="./images/icon-planning.svg"> <a href="#">Planning</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown company" onclick="toggle_dropdown2('company')">
+        Company <img class="img1" alt="arrow-down" src="./images/icon-arrow-down.svg"><img class="img2 close" alt="arrow-up" src="./images/icon-arrow-up.svg">
+        <br>
+        <div class="dropdown-list2">
+          <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#">Careers</a>
+      <a href="#">About</a>
+      <a href="#" class="center">Login</a>
+      <button type="button" class="button">Register</button>
+    </div>
+  </nav>
+
+  <section>
+    <div class="col-1 bottom">
+      <h1>Make <br>remote work</h1>
+
+      <p>
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p><br><br>
+
+      <button id="learn-more" type="button">Learn more</button><br><br>
+
+      <div class="alt-logos">
+        <img alt="databiz" src="./images/client-databiz.svg"> 
+        <img alt="audiophile" src="./images/client-audiophile.svg"> 
+        <img alt="meet" src="./images/client-meet.svg"> 
+        <img alt="maker" src="./images/client-maker.svg">
+      </div>
+    </div>
+
+    <div class="col-1">
+      <img class="img-hero" alt="image-hero" src="./images/image-hero-desktop.png">
+    </div>
+  </section>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
